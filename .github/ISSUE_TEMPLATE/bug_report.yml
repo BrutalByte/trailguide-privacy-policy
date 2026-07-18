@@ -1,0 +1,84 @@
+name: 🐛 Bug Report
+description: Something in TrailGuide isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. The more detail you give, the faster it can be fixed.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you click/do, in order?
+      placeholder: |
+        1. Open a Canvas assignment page
+        2. Click the TrailGuide button
+        3. Select "Generate Flashcards"
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened instead? Include any error messages or screenshots if you have them.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: build
+    attributes:
+      label: Which build are you using?
+      options:
+        - "TrailGuide Canvas AI Tutor (standard)"
+        - "TrailGuide Education (Gemini) (edu/institutional build)"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: Found on the Options page, or chrome://extensions
+      placeholder: e.g. 1.1.0
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Firefox
+        - Edge
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that might help — Canvas domain type (instructure.com, custom domain), console errors, etc.
+    validations:
+      required: false

@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🔒 Report a security vulnerability
+    url: mailto:bryan.buchorn@gmail.com?subject=TrailGuide%20Security%20Report
+    about: Please report security issues privately by email instead of a public issue.
+  - name: 🏫 Institutional deployment / district approval inquiries
+    url: mailto:bryan.buchorn@gmail.com?subject=TrailGuide%20Institutional%20Inquiry
+    about: For district data-privacy agreements and institutional rollout questions.
+  - name: ❓ Help & FAQ
+    url: https://brutalbyte.github.io/trailguide-privacy-policy/help/
+    about: Check the FAQ before filing an issue — your question may already be answered.
