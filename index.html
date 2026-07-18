@@ -404,7 +404,7 @@
       <strong>No district data privacy agreement is currently in place</strong>
       As of the effective date of this policy, TrailGuide Education has not entered into a data privacy agreement with any K&ndash;12 school district. Individual installation of this Extension by a teacher or student does not create the institutional relationship that COPPA's "school as agent" provision or FERPA's "school official" exception require &mdash; both depend on a direct, contracted agreement between the school district and TrailGuide, not on a browser extension being installed independently.
     </div>
-    <p>Schools and districts &mdash; including those serving students under 13 &mdash; should not deploy this Extension for use with student data, and individual educators should not use it with student accounts or student-authored content, until a formal data privacy agreement is in place between their institution and TrailGuide Education. If you administer technology for a school or district and are interested in a formal agreement, contact us using the details in Section 12.</p>
+    <p>Schools and districts &mdash; including those serving students under 13 &mdash; should not deploy this Extension for use with student data, and individual educators should not use it with student accounts or student-authored content, until a formal data privacy agreement is in place between their institution and TrailGuide Education. If you administer technology for a school or district and are interested in a formal agreement, contact us using the details in Section 14.</p>
     <p>If you believe a child under 13 has used this Extension in a way that transmitted personal data, please contact us so we can address it.</p>
   </section>
 
@@ -420,15 +420,83 @@
   </section>
 
   <!-- 11 -->
+  <section id="compliance-practices">
+    <h2>11. Security &amp; Compliance Practices</h2>
+    <p>This section summarizes, in one place, the technical and organizational measures already in place that are relevant to a school data-privacy review. These are factual statements about the current build, cross-referenced to the sections above.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Measure</th><th>What It Means</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>No TrailGuide-operated backend</td>
+            <td>TrailGuide runs entirely inside the browser. There is no TrailGuide server that receives, logs, or stores student data &mdash; there is nothing on our side to breach. (Section 5)</td>
+          </tr>
+          <tr>
+            <td>Local, encrypted storage</td>
+            <td>API keys are encrypted at rest with AES-256-GCM (PBKDF2 key derivation) in <code>chrome.storage.local</code>. Other data stays in the browser's own storage unless a user opts into Drive sync. (Sections 2.2, 6)</td>
+          </tr>
+          <tr>
+            <td>Data minimization by design</td>
+            <td>Canvas content is read and transmitted only when a user explicitly triggers a feature, only to the single AI provider they've configured, and is not retained by TrailGuide afterward. (Section 2.1)</td>
+          </tr>
+          <tr>
+            <td>No advertising or resale</td>
+            <td>TrailGuide does not sell, rent, or use student data for advertising, profiling, or any purpose other than fulfilling the user's direct request. (Section 5)</td>
+          </tr>
+          <tr>
+            <td>Named subprocessors only</td>
+            <td>The only third parties that can receive Canvas content are the ones listed in Section 4 (Google Gemini, Anthropic Claude, OpenAI, and Google Drive if opted in) &mdash; whichever one the user has configured. No other data sharing occurs.</td>
+          </tr>
+          <tr>
+            <td>Model-training data use is avoidable</td>
+            <td>Google's Gemini API treats free-tier ("Unpaid Service") keys differently from billing-enabled ("Paid Service") keys with respect to using submitted content to improve Google's products. The Options page now warns users configuring a key for institutional use to use a billing-enabled key, which carries a no-training-use commitment from Google.</td>
+          </tr>
+          <tr>
+            <td>Voice processing stays on-device</td>
+            <td>Speech recognition uses the browser's built-in Web Speech API; TrailGuide never receives or stores audio. (Section 2.7)</td>
+          </tr>
+          <tr>
+            <td>Minimal permissions</td>
+            <td>Browser permissions are scoped to what each feature requires and are documented individually. (Section 7)</td>
+          </tr>
+          <tr>
+            <td>User-controlled deletion</td>
+            <td>All local data can be cleared from Options &rarr; Danger Zone at any time, or removed entirely by uninstalling. (Section 8)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout warn">
+      <strong>What this section does not claim</strong>
+      These are technical and product-level safeguards, not a substitute for a data privacy agreement. None of the above establishes the direct institutional control that FERPA's school official exception or COPPA's school-as-agent provision requires &mdash; that still depends on the agreement described in Section 12 below.
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section id="institutional-approval">
+    <h2>12. Path to Institutional Approval</h2>
+    <p>TrailGuide Education is actively pursuing formal approval for use within Clark County School District (CCSD), including submission through CCSD's SAFE student-data-privacy review (<a href="https://safe.ccsd.net" target="_blank" rel="noopener">safe.ccsd.net</a>) and a district-level Data Privacy Agreement.</p>
+    <p>As of the effective date of this policy, that agreement has <strong>not</strong> yet been executed. This section exists to give a reviewer a clear, accurate starting point rather than to assert that review is complete:</p>
+    <ul>
+      <li>Sections 2&ndash;7 describe exactly what data the Extension handles, where it is stored, and which third parties can receive it &mdash; the information a data-privacy review needs to evaluate the product.</li>
+      <li>Section 11 documents the technical safeguards already built in.</li>
+      <li>The open item is institutional, not technical: a signed agreement establishing CCSD's direct control over any use of the Extension with student education records, consistent with the requirements described in Sections 9 and 10.</li>
+    </ul>
+    <p>If you are evaluating TrailGuide for institutional deployment &mdash; at CCSD or elsewhere &mdash; we welcome that review and are glad to work through a formal Data Privacy Agreement, including scoping which AI provider(s) would be used for any district-managed rollout. Contact us using the details in Section 14.</p>
+  </section>
+
+  <!-- 13 -->
   <section id="changes">
-    <h2>11. Changes to This Policy</h2>
+    <h2>13. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. When we do, we will update the "Effective Date" at the top of this page and, for material changes, display a notice within the Extension's Options page. Continued use of the Extension after changes are posted constitutes your acceptance of the updated policy.</p>
     <p>Previous versions of this policy are available upon request.</p>
   </section>
 
-  <!-- 12 -->
+  <!-- 14 -->
   <section id="contact">
-    <h2>12. Contact</h2>
+    <h2>14. Contact</h2>
     <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact:</p>
     <div class="callout success">
       <strong>TrailGuide Education</strong>
