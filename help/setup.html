@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setup — TrailGuide Help</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <span class="crumb"><a href="../">TrailGuide</a><span>/</span><a href="index.html">Help</a><span>/</span>Setup</span>
+  <h1>🔑 Setup</h1>
+  <p>Get TrailGuide connected in under two minutes</p>
+  <nav class="tg-nav">
+    <a href="index.html">Overview</a>
+    <a href="setup.html" aria-current="page">Setup</a>
+    <a href="features-students.html">Features</a>
+    <a href="how-to-use.html">How to Use</a>
+    <a href="shortcuts.html">Shortcuts</a>
+    <a href="faq-students.html">FAQ</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="gemini-key">
+    <h2>1. Add a Google Gemini API Key</h2>
+    <p>TrailGuide's AI features are powered by Google's Gemini models. You'll need your own API key — TrailGuide never bills you or proxies requests through its own servers.</p>
+    <ol>
+      <li>Open the extension's <strong>Options</strong> page and go to <strong>API Configuration</strong>.</li>
+      <li>Get a free key from <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">aistudio.google.com/app/apikey</a>.</li>
+      <li>Paste it into the <strong>Google Gemini API Key</strong> field and click <strong>Save API Keys</strong>.</li>
+    </ol>
+    <div class="callout warn">
+      <strong>Using this with student content?</strong>
+      A free-tier ("Unpaid Service") Gemini key means submitted content may be used to improve Google's products. If you're configuring TrailGuide for institutional or K&ndash;12 use, use a key from a billing-enabled ("Paid Service") Google Cloud project instead — it carries a no-training-use commitment from Google. See the <a href="../#institutional-approval">Privacy Policy</a> for details.
+    </div>
+  </section>
+
+  <section id="provider">
+    <h2>2. Choose Your AI Provider</h2>
+    <p>Under <strong>AI Provider</strong> in Options, pick how TrailGuide processes your requests:</p>
+    <ul>
+      <li><strong>Google Gemini (Cloud)</strong> — fast, requires the API key from step 1</li>
+      <li><strong>Web LLM (Local)</strong> — runs entirely on your device, nothing leaves your browser, but requires downloading a model file the first time</li>
+    </ul>
+    <p>Click <strong>Save Provider Settings</strong> once you've chosen.</p>
+  </section>
+
+  <section id="canvas">
+    <h2>3. Connect Canvas (Optional)</h2>
+    <p>Adding a Canvas access token unlocks enhanced features like reading course files directly. This step is optional — TrailGuide works on any Canvas page you visit even without it, by reading the page content you're currently viewing.</p>
+    <ol>
+      <li>In Options, go to <strong>Canvas Connection</strong>.</li>
+      <li>Enter your Canvas URL (e.g. <code>yourschool.instructure.com</code>).</li>
+      <li>Generate an access token following Canvas's own <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-manage-API-access-tokens-as-a-student/ta-p/273" target="_blank" rel="noopener">official instructions</a>, then paste it in.</li>
+    </ol>
+  </section>
+
+  <section id="start">
+    <h2>4. Start Using TrailGuide</h2>
+    <p>Navigate to any Canvas course page. Look for the floating <strong>TrailGuide button</strong> — click it to open the full feature panel. See <a href="how-to-use.html">How to Use</a> for the details.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 TrailGuide Education</p>
+  <p style="margin-top:4px"><a href="index.html">← Back to Help</a> &nbsp;·&nbsp; <a href="../">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>

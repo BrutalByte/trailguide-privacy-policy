@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ for Students — TrailGuide Help</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <span class="crumb"><a href="../">TrailGuide</a><span>/</span><a href="index.html">Help</a><span>/</span>FAQ</span>
+  <h1>❓ Frequently Asked Questions</h1>
+  <p>Straight answers, no marketing copy</p>
+  <nav class="tg-nav">
+    <a href="index.html">Overview</a>
+    <a href="setup.html">Setup</a>
+    <a href="features-students.html">Features</a>
+    <a href="how-to-use.html">How to Use</a>
+    <a href="shortcuts.html">Shortcuts</a>
+    <a href="faq-students.html" aria-current="page">FAQ</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="audience-toggle">
+    <a href="faq-students.html" aria-current="page">🎓 Students</a>
+    <a href="faq-teachers.html">🍎 Teachers, TAs &amp; Course Designers</a>
+  </div>
+
+  <details class="faq" open>
+    <summary>Is TrailGuide free?</summary>
+    <p>Yes — the extension itself is free. You bring your own Google Gemini API key (a free tier is available from Google), so TrailGuide doesn't bill you or run its own paid backend.</p>
+  </details>
+
+  <details class="faq">
+    <summary>Do I need to create an account?</summary>
+    <p>No. TrailGuide never creates user accounts or profiles. The only optional sign-in is Google OAuth, and only if you choose to enable Google Drive sync for your settings and study data.</p>
+  </details>
+
+  <details class="faq">
+    <summary>Where does my data go?</summary>
+    <p>Settings, chat history, and study data are stored locally in your browser by default. Canvas page content is sent to whichever AI provider you've configured (Google Gemini, or optionally OpenAI/Anthropic on the standard build) only when you trigger a feature — nothing is sent in the background. Full details are in the <a href="../">Privacy Policy</a>.</p>
+  </details>
+
+  <details class="faq">
+    <summary>Is TrailGuide open source?</summary>
+    <p>No. TrailGuide is proprietary software. Installing it grants you a limited license to use the packaged extension — it does not grant a right to view, modify, or redistribute the source code.</p>
+  </details>
+
+  <details class="faq">
+    <summary>What happened to the custom avatar creator?</summary>
+    <p>The previous avatar creator relied on Ready Player Me, which shut down its service in January 2026. TrailGuide now ships with a bundled gallery of ready-to-use avatars instead — pick one from Options, no external service required.</p>
+  </details>
+
+  <details class="faq">
+    <summary>What's the difference between the standard and education builds?</summary>
+    <p>The education build ("TrailGuide Education (Gemini)") is a Gemini-only variant intended for institutional deployment: OpenAI and Anthropic are removed at the build level, not just hidden in the UI. On-device processing (Web LLM) remains available in both builds since it never sends data anywhere.</p>
+  </details>
+
+  <details class="faq">
+    <summary>Is TrailGuide approved for use by my school district?</summary>
+    <p>Individual use is at your own discretion, the same as any other browser extension. Formal institutional approval is a separate process that requires a signed data privacy agreement between your district and TrailGuide Education — see <a href="../#institutional-approval">Path to Institutional Approval</a> in the Privacy Policy for where that stands.</p>
+  </details>
+
+  <details class="faq">
+    <summary>Something isn't working — what do I do?</summary>
+    <p>Check that your API key is entered correctly in Options, and that you're on an actual Canvas course page (not the dashboard). If it's still not working, email <a href="mailto:bryan.buchorn@gmail.com">bryan.buchorn@gmail.com</a> with what you were doing and any error message you saw.</p>
+  </details>
+
+  <details class="faq">
+    <summary>How do I request a feature or report a bug?</summary>
+    <p>Email <a href="mailto:bryan.buchorn@gmail.com">bryan.buchorn@gmail.com</a> — there's no public issue tracker yet.</p>
+  </details>
+
+  <details class="faq">
+    <summary>I'm a teacher or TA — where's my FAQ?</summary>
+    <p>See the <a href="faq-teachers.html">Teacher FAQ</a> for role detection, Teacher Tools, and grading-related questions.</p>
+  </details>
+
+</main>
+
+<footer>
+  <p>© 2026 TrailGuide Education</p>
+  <p style="margin-top:4px"><a href="index.html">← Back to Help</a> &nbsp;·&nbsp; <a href="../">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
