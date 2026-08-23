@@ -6,7 +6,7 @@
 
 If you believe you've found a security issue in TrailGuide Canvas AI Tutor — for example, a way to exfiltrate a user's stored API key, bypass the Content Security Policy, or otherwise compromise a user's browser through the extension — report it privately:
 
-**Email:** bryan.buchorn@gmail.com
+**Email:** brutalbyte@gmail.com
 **Subject line:** `TrailGuide Security Report`
 
 Please include:

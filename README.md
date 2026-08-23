@@ -22,4 +22,4 @@ Use [Issues → New Issue](../../issues/new/choose) and pick the Bug Report or F
 
 ## Contact
 
-For institutional deployment inquiries or anything not suited to a public issue, email **bryan.buchorn@gmail.com**.
+For institutional deployment inquiries or anything not suited to a public issue, email **brutalbyte@gmail.com**.
